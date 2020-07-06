@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <?php wp_head(); ?>
+</head>
+<body>
+    <header>
+        <div class="navigation container row justify-between">
+            <!------------------------------------------------>
+            <div class="site-info row align-end">
+                <div class="logo col">
+                   <?php echo get_custom_logo(); ?>
+                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name');?></a></h1>
+                </div>
+
+                <div class="title col align-end">
+                    <p class="site-description"><?php bloginfo('description');?></p>
+                </div>
+            </div>
+            <!------------------------------------------------------>
+            <div class="site-contacts row align-end">
+                <div class="languages row">
+                    <a href="#" class="lang-button current-lang">УКР</a>
+                    <a href="#" class="lang-button">ENG</a>
+                </div>
+                <div class="header-contacts row ">
+                    <img src="" alt="">
+                    <div class="col justify-between">
+                        <p>+38 063 871 8833</p>
+                        <p>+38 097 400 7373</p>
+                        <p>+38 095 075 6535</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!------------------------------------------------------------------------->
+        <div id="video-banner">
+            <div class="menu_icon"><img src="<?php echo get_template_directory_uri(); ?>/img/menu_white.png " alt="menu_icon"></div>
+            <nav class="mobile-navigation">
+                <? wp_nav_menu(array('menu' => 'top-menu', 'menu_class' => 'mob-menu')); ?>
+            </nav>
+
+            <div class="navigation-menu vw100 row justify-center">
+                <div class="container row justify-center">
+                    <nav class="container top-navigation row justify-center">
+                        <? wp_nav_menu(array('menu' => 'top-menu', 'menu_class' => 'top-menu')); ?>
+                    </nav>
+                </div>
+            </div>
+            <div class="site-tagline row justify-center">
+                <div class="container row align-start">
+                    <h3>Посміхайтесь разом з нами </h3>
+                </div>
+             </div>
+           <video autoplay loop playsinline muted>
+                <source src="https://rikota.com.ua/wp-content/uploads/2019/09/RIKOTA-WEB-DESKTOP.mp4" type='video/mp4'>
+            </video>
+        </div>
+
+    </header>
+
+

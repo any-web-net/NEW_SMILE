@@ -1,0 +1,91 @@
+.clear {
+    margin-top: -1px;
+    height: 1px;
+    clear:both;
+    zoom: 1;
+}
+/* Slider */
+.auto_slider {
+    max-width: 900px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+.auto_slider::-moz-selection {
+    background: transparent;
+    color: #fff;
+    text-shadow: none;
+}
+.auto_slider::selection {
+    background: transparent;
+    color: #fff;
+    text-shadow: none; }
+
+.auto_slider-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.auto_slider-wrap {
+    position: relative;
+    left: 0px;
+    top: 0;
+    width: 10000000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+.auto_slider-item {
+    width: 218px;
+    padding: 10px 50px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 3s ease;
+
+}
+.auto_slider-item img{
+    width: 80%;
+    height: auto;
+}
+
+.auto_slider-title {
+    font: bold 16px monospace;
+    display: block;
+}
+.navy {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+
+}
+.prev-slide {
+    left: 0;
+    background:  url(https://wp-theme.vinash.netxi.in/wp-content/uploads/2020/06/left-arrow.png) 11px 40% no-repeat;
+}
+.next-slide {
+    right: 0;
+    background:  url(https://wp-theme.vinash.netxi.in/wp-content/uploads/2020/06/right-arrow.png) 13px 40% no-repeat;
+}
+
+.auto {
+    width: 7px;
+    height: 11px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.play {
+    background: url(https://wp-theme.vinash.netxi.in/wp-content/uploads/2020/06/play.png) center no-repeat;
+}
+.pause {
+    background: url(https://wp-theme.vinash.netxi.in/wp-content/uploads/2020/06/pause.png) center no-repeat;
+}
