@@ -15,7 +15,7 @@
             <div class="site-info row align-end">
                 <div class="logo col">
                    <?php echo get_custom_logo(); ?>
-                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name');?></a></h1>
+<!--                    <h1 class="site-title"><a href="--><?php //echo esc_url(home_url('/')); ?><!--" rel="home">--><?php //bloginfo('name');?><!--</a></h1>-->
                 </div>
 
                 <div class="title col align-end">
@@ -58,7 +58,7 @@
                 </div>
              </div>
            <video autoplay loop playsinline muted>
-                <source src="https://rikota.com.ua/wp-content/uploads/2019/09/RIKOTA-WEB-DESKTOP.mp4" type='video/mp4'>
+                <source src="<?php echo get_template_directory_uri(); ?>/img/header_video.mp4" type='video/mp4'>
             </video>
         </div>
 
