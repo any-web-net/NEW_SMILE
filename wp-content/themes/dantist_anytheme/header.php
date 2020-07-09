@@ -28,9 +28,9 @@
                     <a href="#" class="lang-button current-lang">УКР</a>
                     <a href="#" class="lang-button">ENG</a>
                 </div>
-                <div class="header-contacts row ">
-                    <img src="" alt="">
-                    <div class="col justify-between">
+                <div class="header-contacts row  align-end">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/phone_icon.png " alt="phone" height="60" width="30">
+                    <div class="col">
                         <p>+38 063 871 8833</p>
                         <p>+38 097 400 7373</p>
                         <p>+38 095 075 6535</p>
@@ -47,15 +47,13 @@
 
             <div class="navigation-menu vw100 row justify-center">
                 <div class="container row justify-center">
-                    <nav class="container top-navigation row justify-center">
+                    <nav class="container top-navigation row justify-between">
                         <? wp_nav_menu(array('menu' => 'top-menu', 'menu_class' => 'top-menu')); ?>
                     </nav>
                 </div>
             </div>
             <div class="site-tagline row justify-center">
-                <div class="container row align-start">
                     <h3>Посміхайтесь разом з нами </h3>
-                </div>
              </div>
            <video autoplay loop playsinline muted>
                 <source src="<?php echo get_template_directory_uri(); ?>/img/header_video.mp4" type='video/mp4'>

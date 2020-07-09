@@ -10,7 +10,7 @@ function show_menu(){
         mas = menu.querySelectorAll('li');
 
     mas.forEach( el => ( el.addEventListener('click', close_menu)));
-    dom.mob_menu.style.left = (document.documentElement.offsetWidth - 200) + 'px';
+    dom.mob_menu.style.left = (document.documentElement.offsetWidth - 330) + 'px';
 
 
 }

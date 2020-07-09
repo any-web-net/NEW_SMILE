@@ -3,6 +3,10 @@
     src: url('Roboto.ttf');
 }
 @font-face {
+    font-family: 'Roboto Light';
+    src: url('Roboto Light.ttf');
+}
+@font-face {
     font-family: 'Roboto Bold Italic';
     src: url('Roboto Bold Italic.ttf');
 }
@@ -17,4 +21,8 @@
 @font-face {
     font-family: 'Roboto Medium Italic';
     src: url('Roboto Medium Italic.ttf');
+}
+@font-face {
+    font-family: 'MarckScript Regular';
+    src: url('MarckScript-Regular.ttf');
 }
