@@ -90,6 +90,9 @@ table{
 .left{
     text-align: left;
 }
+.right{
+    text-align: right;
+}
 .vw100{
     width: 100% !important;
     overflow: hidden;
@@ -109,19 +112,10 @@ table{
 .margin-top{
     margin-top: var(--marginspace) !important;
 }
-/*======================Fonts====================================*/
+/*==========================================================*/
 header{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-}
-h1{
-    /*font-family: "Publica Play Regular";*/
-}
-h2, h3, h4{
-    /*font-family: "Product Sans Bold", sans-serif;*/
-}
-p{
-    /*font-family: Roboto, sans-serif;*/
 }
 nav li {
     font-family: 'Roboto', sans-serif;
@@ -133,16 +127,10 @@ a {
     outline: none;
     display: block;
 }
-td{
-    /*font-family: Roboto, sans-serif;*/
+.font-MarckScript{
+    font-family: "MarckScript Regular";
 }
 
-
-h2{
-    font-size: 36px;
-    text-align: center;
-    margin: 20px auto;
-}
 @media screen and (max-width: 1200px) {
     :root{
         --header-height: 700px;
@@ -158,22 +146,24 @@ h2{
 }
 @media screen and (max-width: 900px) {
     .container{
-        width: 850px;
+        width: 700px;
     }
 }
 @media screen and (max-width: 860px) {
     .container{
-        width: 800px;
+        width: 700px;
     }
 }
 @media screen and (max-width: 810px) {
     .container{
-        width:  750px;
+        width:  650px;
     }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
     :root{
         --header-height: 630px;
+        --paddingspace: 20px;
+        --marginspace: 20px;
     }
     .container{
         width:  700px;
@@ -186,7 +176,7 @@ h2{
 }
 @media screen and (max-width: 660px) {
     .container{
-        width:  600px;
+        width:  550px;
     }
 }
 @media screen and (max-width: 610px) {
@@ -194,25 +184,23 @@ h2{
         --header-height: 530px;
     }
     .container{
-        width:  550px;
+        width:  450px;
     }
 }
 @media screen and (max-width: 560px) {
     .container{
-        width:  500px;
+        width: 420px;
     }
 }
 @media screen and (max-width: 510px) {
-    .container{
-        width:  450px;
-    }
+
 }
 @media screen and (max-width: 460px) {
     :root{
         --header-height: 420px;
     }
     .container{
-        width:  400px;
+        width:  360px;
     }
 }
 @media screen and (max-width: 410px) {
@@ -231,8 +219,6 @@ header{
     height: var(--header-height);
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     flex: 0 0 auto;
     overflow: hidden;
 }
@@ -244,12 +230,8 @@ header a {
     margin: 0 auto;
     padding: 10px 30px;
     background: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     font-family: 'Roboto Light' !important;
-    font-size: 18px;
+    font-size: 20px;
 }
 .title{
     height: 100%;
@@ -448,6 +430,26 @@ img.custom-logo{
     .site-tagline {
         font-size: 36px;
     }
+    .address  p {
+        text-align: center !important;
+    }
+    .hr {
+        width: 30% !important;
+    }
+    .top-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .social{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   /* footer .top-info{*/
+   /*     flex-direction: column !important;*/
+   /*}*/
 
 }
 @media screen and (max-width: 500px) {
@@ -733,128 +735,88 @@ main{
 /*==========================Footer================================*/
 footer{
     flex: 0 0 auto;
-    background: black;
-    color: white;
-    font-family: "Roboto Condensed";
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    background: #b3b3b3;
+    color: black;
+    font-family: "Roboto Light";
+    padding: var(--paddingspace);
+    font-size: 20px;
+
 }
-.footer_container{
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px;
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-}
-.adress, .tel, .social{
-  width: 50%;
-  height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-.adress h4, .tel h4, .social h4{
-     font-family: "Roboto Condensed";
-     font-size: 20px;
-     font-weight: 400;
-     margin-bottom: 10px;
- }
-.adress p, .tel p, .social p{
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 400;
+
+.address p, .social a{
+    font-family: "Roboto Light";
+    font-size: 20px;
     margin-bottom: 10px;
 }
-.adress div, .tel div, .social div {
+.address div, .social div {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.social_icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+footer .social div {
+    margin-bottom: 0;
 }
-.skype,
-.telegram,
-.viber,
+.social_icons{
+align-items: center!important;
+}
+
 .facebook,
 .instagram{
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: auto 10px;
-    color:transparent !important;
-    cursor: pointer;
+display: inline-block;
+overflow: hidden;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+margin: auto 10px;
+color:transparent !important;
+cursor: pointer;
 
 }
 .facebook{
-    background: url("../../img/facebookIcon.png") no-repeat;
-    background-size: cover;
+background: url("../../img/facebook_icon.png") no-repeat;
+background-size: cover;
 }
 .instagram{
-    background: url("../../img/instaIcon.png") no-repeat;
-    background-size: cover;
+background: url("../../img/instagram_icon.png") no-repeat;
+background-size: cover;
 
 }
-.skype{
-    background: url("../../img/skypeIcon.png") no-repeat;
-    background-size: cover;
-}
-.telegram{
-     background: url("../../img/telegramIcon.png") no-repeat;
-     background-size: cover;
-
- }
-.viber{
-    background: url("../../img/viber.png") no-repeat;
-    background-size: cover;
-
-}
-#top-menu {
-    margin: auto 10px;
-}
-.skype a,
-.telegram a,
-.viber a,
 .facebook a,
 .instagram a{
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+display: block;
+width: 100%;
+height: 100%;
+cursor: pointer;
+}
+.footer-logo{
+    margin-top: -40px !important;
+
+}
+.hr{
+width: 40%;
+border-bottom: 1px solid #666668;
+margin-bottom: 10px;
 }
 .copyright{
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto 30px auto;
-    padding: 30px 100px 0 100px;
-    border-top: .1em solid white;
-    font-family: "Roboto Condensed";
-    font-size: 14px;
+font-size: 20px;
+margin-top: var(--marginspace) !important;
+
+}
+@media screen and (max-width: 770px) {
+
+
 }
 
-@media screen and (max-width: 420px) {
-    .footer_container{
-        flex-direction: column;
-        width: 100%;
 
+@media screen and (max-width: 770px) {
+    footer,
+    .address p, .social a,
+    .copyright{
+        font-size: 18px;
     }
-    .adress, .tel{
-        margin-bottom: 20px;
+    .footer-logo{
+        margin-top: var(--marginspace) !important;
     }
+
 }
 @media screen and (max-width: 320px) {
 

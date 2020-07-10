@@ -9,13 +9,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
+    <header class="col">
         <div class="navigation container row justify-between">
             <!------------------------------------------------>
             <div class="site-info row align-end">
                 <div class="logo col">
                    <?php echo get_custom_logo(); ?>
-<!--                    <h1 class="site-title"><a href="--><?php //echo esc_url(home_url('/')); ?><!--" rel="home">--><?php //bloginfo('name');?><!--</a></h1>-->
                 </div>
 
                 <div class="title col align-end">
