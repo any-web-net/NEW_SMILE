@@ -28,7 +28,7 @@
                     <a href="#" class="lang-button">ENG</a>
                 </div>
                 <div class="header-contacts row  align-end">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/phone_icon.png " alt="phone" height="60" width="30">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/phone_icon.png " alt="phone" class="photo_icon">
                     <div class="col">
                         <p>+38 063 871 8833</p>
                         <p>+38 097 400 7373</p>

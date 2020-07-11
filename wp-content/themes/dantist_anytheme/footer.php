@@ -7,7 +7,7 @@
        </div>
         <!--------------------------------------------->
          <div class="social row align-end">
-            <div class="social_icons row justify-between align-center">
+            <div class="social_icons row justify-between">
                 <p class="instagram"><a href="#"></a></p>
                 <p class="facebook"><a href="#"></a></p>
           </div>

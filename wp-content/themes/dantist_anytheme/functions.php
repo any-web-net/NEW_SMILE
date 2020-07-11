@@ -67,11 +67,12 @@ add_filter('widget_text', 'do_shortcode');
 //------------------------------------------
 
 // Отключаем любые CSS стили плагинов
-//function custom_dequeue() {
-//    wp_dequeue_style('wp-block-library');
-//
-//}
-//add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
-//add_action( 'wp_head', 'custom_dequeue', 9999 );
+function custom_dequeue() {
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('dashicons');
+
+}
+add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
+add_action( 'wp_head', 'custom_dequeue', 9999 );
 
 

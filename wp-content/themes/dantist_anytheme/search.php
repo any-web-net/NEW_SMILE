@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main class="container col">
     <h1>Search</h1>
     <section>
         <h2 class="content-heading"><?php printf( __('Search Results for: %s', 'default'), get_search_query() ); ?></h2>
