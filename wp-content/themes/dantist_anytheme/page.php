@@ -1,15 +1,15 @@
 <?php wp_head();?>
 <?php get_header(); ?>
-<main class="container col">
-    <section class="container col">
+<main class="col">
+    <div class="col">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
             the_content(); // displays whatever you wrote in the wordpress editor
         endwhile; endif; //ends the loop
         ?>
-    </section>
-    <section class="aside">
+    </div>
+    <div class="aside">
         <?php get_sidebar(); ?>
-    </section>
+    </div>
 
 </main>
 <?php get_footer();?>
