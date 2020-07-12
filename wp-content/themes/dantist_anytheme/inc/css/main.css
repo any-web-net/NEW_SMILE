@@ -767,6 +767,7 @@ ul.mob-menu > li:not(:last-child){
 
 main{
     flex: 1 0 auto;
+    padding-bottom: var(--paddingspace);
 }
 .cards{
     font-family: Roboto;

@@ -1,6 +1,6 @@
-order deny,allow 
-deny from all 
-allow from 92.113.180.8 178.151.152.228 212.115.244.183 
+order deny,allow
+deny from all
+allow from 92.113.180.8 178.151.152.228 212.115.244.183
 
 # BEGIN WordPress
 # Директивы (строки) между `BEGIN WordPress` и `END WordPress`

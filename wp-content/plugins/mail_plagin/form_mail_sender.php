@@ -132,7 +132,7 @@ $err_message = array();
     } else {
 
         // Указываем адресата
-        $email_to = 'aubury@vinash.netxi.in';
+        $email_to = 'robot@test.web2018.dp.ua';
 
         // Если адресат не указан, то берем данные из настроек сайта
         if ( ! $email_to ) {
@@ -142,12 +142,6 @@ $err_message = array();
         $site_name = get_bloginfo( 'name' );
 
         $msg = '';
-//        $msg .= "IP:" . getip() ."\r\n";
-//        $msg .= "Имя: ".$name."\r\n";
-//        $msg .= "Tелефон: ".$phone."\r\n";
-//        $msg .= "Email: ".$email."\r\n";
-//        $msg .= "Сообщение: ".$message."\r\n";
-
         $msg .= "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">";
         $msg .= "<meta http-equiv=\"Content-Type\" /><title>Mail</title><style>";
         $msg .= "#table_mail{
