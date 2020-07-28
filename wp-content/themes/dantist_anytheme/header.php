@@ -38,27 +38,19 @@
             </div>
         </div>
   <!------------------------------------------------------------------------->
-        <div id="video-banner">
+        <div class="nav-panel">
             <div class="menu_icon"><img src="<?php echo get_template_directory_uri(); ?>/img/menu_white.png " alt="menu_icon"></div>
             <nav class="mobile-navigation">
                 <? wp_nav_menu(array('menu' => 'top-menu', 'menu_class' => 'mob-menu')); ?>
             </nav>
-
-            <div class="navigation-menu vw100 row justify-center">
+          <div class="navigation-menu vw100 row justify-center">
                 <div class="container row justify-center">
                     <nav class="container top-navigation row justify-between">
                         <? wp_nav_menu(array('menu' => 'top-menu', 'menu_class' => 'top-menu')); ?>
                     </nav>
                 </div>
             </div>
-            <div class="site-tagline row justify-center">
-                    <h3>Посміхайтесь разом з нами </h3>
-             </div>
-           <video autoplay loop playsinline muted>
-                <source src="<?php echo get_template_directory_uri(); ?>/img/header_video.mp4" type='video/mp4'>
-            </video>
         </div>
-
     </header>
 
 

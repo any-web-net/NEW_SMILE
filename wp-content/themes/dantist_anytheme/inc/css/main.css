@@ -248,7 +248,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height);
+    height: auto;
     margin: 0;
     padding: 0;
     flex: 0 0 auto;
@@ -325,10 +325,40 @@ img.photo_icon{
     height: 60px;
     width: 30px;
 }
+
+.navigation-menu{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    height: 70px;
+    background: black;
+    /*z-index: 2;*/
+
+}
+/*.site-tagline{*/
+/*    height: 80px;*/
+/*    width: 50%;*/
+/*    position: absolute;*/
+/*    top: calc(100% - 80px);*/
+/*    left: 0;*/
+/*    font-family: "MarckScript Regular";*/
+/*    font-size: 48px;*/
+/*    font-style: italic;*/
+/*    color: white;*/
+/*    z-index: 2;*/
+/*    background: rgba(0, 0, 0, 0.37);*/
+/*    text-align: right !important;*/
+/*}*/
+/*.site-tagline h3{*/
+/*    text-align: right;*/
+/*    margin-right: 30px;*/
+/*    margin-left: auto;*/
+/*}*/
+
 #video-banner{
     position: relative;
     min-width: 100%;
-    height: calc(var(--header-height) - 120px);
+    height: 745px;
     padding: 0;
     margin: 0;
     display: block;
@@ -347,38 +377,11 @@ img.photo_icon{
     -webkit-transform: translate(-50%,-50%);
     z-index: -1;
 }
-.navigation-menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70px;
-    background: black;
-    z-index: 2;
 
-}
-.site-tagline{
-    height: 80px;
-    width: 50%;
-    position: absolute;
-    top: calc(100% - 80px);
-    left: 0;
-    font-family: "MarckScript Regular";
-    font-size: 48px;
-    font-style: italic;
-    color: white;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.37);
-    text-align: right !important;
-}
-.site-tagline h3{
-    text-align: right;
-    margin-right: 30px;
-    margin-left: auto;
-}
 @media screen and (max-width: 1300px) {
-   .site-tagline{
-       width: 60%;
-   }
+   /*.site-tagline{*/
+   /*    width: 60%;*/
+   /*}*/
 }
 
 @media screen and (max-width: 1200px){
@@ -400,10 +403,10 @@ img.photo_icon{
         font-size: 16px !important;
     }
 
-    .site-tagline{
-        width: 70%;
-        font-size: 40px;
-    }
+    /*.site-tagline{*/
+    /*    width: 70%;*/
+    /*    font-size: 40px;*/
+    /*}*/
 
 }
 @media screen and (max-width: 900px) {
@@ -464,13 +467,13 @@ img.photo_icon{
     .languages{
         margin-right: 0 !important;
     }
-    .site-tagline {
-        width: 100%;
-    }
-    .site-tagline h3 {
-        margin-right: auto !important;
-        margin-left: auto;
-    }
+    /*.site-tagline {*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.site-tagline h3 {*/
+    /*    margin-right: auto !important;*/
+    /*    margin-left: auto;*/
+    /*}*/
 }
 @media screen and (max-width: 600px){
     .navigation{
@@ -478,16 +481,16 @@ img.photo_icon{
         padding-right: 10px !important;
         padding-left: 10px !important;
     }
-    .site-tagline{
-        width: 100%;
-        font-size: 36px;
-        text-align: center !important;
-    }
-    .site-tagline h3 {
-        text-align: center !important;
-        margin-right: auto;
-        margin-left: auto;
-    }
+    /*.site-tagline{*/
+    /*    width: 100%;*/
+    /*    font-size: 36px;*/
+    /*    text-align: center !important;*/
+    /*}*/
+    /*.site-tagline h3 {*/
+    /*    text-align: center !important;*/
+    /*    margin-right: auto;*/
+    /*    margin-left: auto;*/
+    /*}*/
     .address  p {
         text-align: center !important;
     }
@@ -515,10 +518,10 @@ img.photo_icon{
     .navigation{
         padding: 5px;
     }
-   .site-tagline{
-       top: calc(100% - 60px) !important;
-       height: 60px;
-   }
+   /*.site-tagline{*/
+   /*    top: calc(100% - 60px) !important;*/
+   /*    height: 60px;*/
+   /*}*/
 
 }
 @media screen and (max-width: 420px){
@@ -541,11 +544,11 @@ img.photo_icon{
         width: 65px;
         height: 60px;
     }
-    .site-tagline {
-        top: calc(100% - 50px) !important;
-        height: 50px;
-        font-size: 26px;
-    }
+    /*.site-tagline {*/
+    /*    top: calc(100% - 50px) !important;*/
+    /*    height: 50px;*/
+    /*    font-size: 26px;*/
+    /*}*/
     .header-contacts p {
         font-size: 14px;
     }
@@ -557,10 +560,10 @@ img.photo_icon{
 
 }
 @media screen and (max-width: 320px) {
-  .site-tagline,
-  .site-tagline h3{
-      text-align: center !important;
-  }
+  /*.site-tagline,*/
+  /*.site-tagline h3{*/
+  /*    text-align: center !important;*/
+  /*}*/
     .header-contacts p {
         font-size: 12px !important;
         padding: 5px 0 0 1px;
