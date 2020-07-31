@@ -12,6 +12,13 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -25,6 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,7 +50,8 @@
       <workItem from="1594655675041" duration="1252000" />
       <workItem from="1595962355860" duration="2706000" />
       <workItem from="1596087267346" duration="1231000" />
-      <workItem from="1596118079592" duration="6808000" />
+      <workItem from="1596118079592" duration="12084000" />
+      <workItem from="1596204930793" duration="11405000" />
     </task>
     <servers />
   </component>
@@ -50,9 +59,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="532" y="-5" width="838" height="1032" key="search.everywhere.popup" timestamp="1595962482746">
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1596132057773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="-5" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595962482746" />
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596132057773" />
   </component>
 </project>

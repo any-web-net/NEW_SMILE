@@ -36,10 +36,15 @@ table{
 ul{
     list-style: none;
 }
+p{
+    font-family: "Roboto Light";
+    font-size: 20px;
+    line-height: 1.3;
+}
 
 .container {
     width: 1200px;
-    margin: 0 auto !important;
+    margin: 0 auto;
 }
 .row{
     display: flex;
@@ -110,8 +115,8 @@ ul{
 .height_100{
     min-height: 100% !important;
 }
-.padding_vertical{
-    padding: 30px;
+.padding{
+    padding: var(--paddingspace);
 }
 .padding-vertical{
     padding: 30px 0;
@@ -129,10 +134,10 @@ ul{
     color: black;
 }
 .margin-top{
-    margin-top: var(--marginspace) !important;
+    margin-top: 40px !important;
 }
 section{
-    margin: var(--marginspace) auto;
+    margin: 40px auto;
     padding: var(--paddingspace) 0;
 }
 .relative{
@@ -140,6 +145,14 @@ section{
 }
 .absolute{
     position: absolute;
+}
+.btn{
+    border: 2px solid #c6c7c8;
+    border-radius: 10px;
+    padding: 10px 50px;
+    color: black;
+    font-size: 30px;
+    font-family: "MarckScript Regular";
 }
 /*==========================================================*/
 header{
@@ -198,6 +211,11 @@ a {
     .container{
         width:  700px;
     }
+    section{
+        margin: 10px auto!important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 @media screen and (max-width: 710px) {
     .container{
@@ -216,6 +234,10 @@ a {
     .container{
         width:  450px;
     }
+    p {
+        font-size: 16px;
+        line-height: 1.1;
+    }
 }
 @media screen and (max-width: 560px) {
     .container{
@@ -223,7 +245,12 @@ a {
     }
 }
 @media screen and (max-width: 510px) {
-
+    .btn {
+        padding: 10px 50px;
+        color: black;
+        font-size: 20px;
+        font-family: "MarckScript Regular";
+    }
 }
 @media screen and (max-width: 460px) {
     :root{
@@ -245,7 +272,7 @@ a {
 }
 /*======================Header===================================*/
 header{
-    position: relative;
+    /*position: relative;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -361,7 +388,7 @@ img.photo_icon{
 #video-banner{
     position: relative;
     min-width: 100%;
-    height: 700px !important;
+    height: 700px;
     /*height: calc( 100vh - 250px) !important;*/
     padding: 0;
     margin: 0;
@@ -392,19 +419,15 @@ img.photo_icon{
     /*    height: 1000px !important;*/
     /*}*/
 
-    .site-tagline{
-        width: 60%;
-    }
 }
 
 @media screen and (max-width: 1300px) {
-    /*#video-banner{*/
-    /*    height: 745px;*/
-    /*}*/
-
-   .site-tagline{
-       width: 60%;
-   }
+    #video-banner{
+        height: 500px;
+    }
+    .site-tagline {
+        top: calc(100% - 50px);
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -425,11 +448,13 @@ img.photo_icon{
     ul.top-menu li  a {
         font-size: 16px !important;
     }
-
-    .site-tagline{
-        width: 70%;
-        font-size: 40px;
+    #video-banner{
+        height: 500px;
     }
+    /*.site-tagline{*/
+    /*    width: 70%;*/
+    /*    font-size: 40px;*/
+    /*}*/
 
 }
 @media screen and (max-width: 900px) {
@@ -457,6 +482,9 @@ img.photo_icon{
         text-align: left;
         word-wrap: break-spaces;
     }
+    .site-tagline{
+        font-size: 30px;
+    }
 
 }
 @media screen and (max-width: 800px) {
@@ -469,7 +497,8 @@ img.photo_icon{
 @media screen and (max-width: 770px){
 
     #video-banner{
-        height: calc(var(--header-height) - 80px);
+        height: 430px;
+        border-bottom: 5px solid black;
     }
     .site-contacts {
          flex-wrap: wrap !important;
@@ -490,13 +519,7 @@ img.photo_icon{
     .languages{
         margin-right: 0 !important;
     }
-    .site-tagline {
-        width: 100%;
-    }
-    .site-tagline h3 {
-        margin-right: auto !important;
-        margin-left: auto;
-    }
+
 }
 @media screen and (max-width: 600px){
     .navigation{
@@ -504,15 +527,12 @@ img.photo_icon{
         padding-right: 10px !important;
         padding-left: 10px !important;
     }
-    .site-tagline{
-        width: 100%;
-        font-size: 36px;
-        text-align: center !important;
+    #video-banner{
+        height: 330px;
     }
-    .site-tagline h3 {
-        text-align: center !important;
-        margin-right: auto;
-        margin-left: auto;
+    .site-tagline{
+       font-size: 26px;
+        top: calc(100% - 40px);
     }
     .address  p {
         text-align: center !important;
@@ -541,9 +561,11 @@ img.photo_icon{
     .navigation{
         padding: 5px;
     }
+    #video-banner{
+        border-bottom: 3px solid black;
+    }
    .site-tagline{
-       top: calc(100% - 60px) !important;
-       height: 60px;
+       font-size: 22px;
    }
 
 }
@@ -567,10 +589,14 @@ img.photo_icon{
         width: 65px;
         height: 60px;
     }
+    #video-banner{
+        height: 230px;
+
+    }
     .site-tagline {
-        top: calc(100% - 50px) !important;
-        height: 50px;
-        font-size: 26px;
+        height: 30px;
+        top: calc(100% - 30px) !important;
+        font-size: 18px;
     }
     .header-contacts p {
         font-size: 14px;
@@ -583,10 +609,13 @@ img.photo_icon{
 
 }
 @media screen and (max-width: 320px) {
-  .site-tagline,
-  .site-tagline h3{
-      text-align: center !important;
-  }
+    #video-banner{
+        height: 190px;
+    }
+  /*.site-tagline,*/
+  /*.site-tagline h3{*/
+  /*    text-align: center !important;*/
+  /*}*/
     .header-contacts p {
         font-size: 12px !important;
         padding: 5px 0 0 1px;
@@ -644,6 +673,7 @@ img.photo_icon{
 }
 
 /*====================Top-Menu===================================*/
+
 .menu-mobile-navigation-container,
 .top-menu{
     width: 100% !important;
@@ -726,7 +756,7 @@ ul.top-menu .sub-menu > li > a{
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    top: 10px !important;
+    top: 180px !important;
     left: calc(50% - 25px) !important;
     display: none;
     z-index: 10;
@@ -740,7 +770,7 @@ ul.top-menu .sub-menu > li > a{
 }
 .mobile-navigation{
     position: absolute;
-    top: 0;
+    top: 180px;
     left: 100%;
     color: white;
     width: 400px;
@@ -864,6 +894,9 @@ main{
     background-size: contain;
     padding-right: 20px;
 }
+.list li p{
+    padding-left: 10px;
+}
 .border{
     width: 100%;
     height: 100%;
@@ -929,13 +962,18 @@ main{
     align-self: flex-end;
     width: 100%;
     height: 135px;
-    font-family: "MarckScript Regular";
-    font-size: 24px;
+    font-family: "MarckScript Regular" !important;
+    font-size: 24px !important;
     line-height: 1.3;
     background: rgba(198, 199, 200, 0.76);
     padding: 20px;
     top: calc(100% - 135px);
     z-index: 2;
+}
+.info_block p{
+    font-family: "MarckScript Regular" !important;
+    font-size: 24px !important;
+    line-height: 1.3;
 }
 .main-info_block{
     display: none;
