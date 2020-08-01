@@ -1,5 +1,5 @@
 .diagnostic.banner{
-    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/07/diagnostics_banner.jpg")no-repeat, center center;
+    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/08/diagnostics_banner.jpg")no-repeat, center center;
     background-size: cover;
 }
 .diagnostic .padding-vertical{
@@ -14,11 +14,11 @@
 
 }
 .img-list.diagnostic > div:nth-child(1).img_1{
-    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/07/diagnostics_2.jpg") no-repeat, center center;
+    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/08/diagnostics_2.jpg") no-repeat, center center;
     background-size: cover;
 }
 .img-list.diagnostic > div:nth-child(1).img_2{
-    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/07/diagnostics_kt_4.jpg") no-repeat, center center;
+    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/08/diagnostics_kt_4.jpg") no-repeat, center center;
     background-size: cover;
 }
 @media screen and (max-width: 900px){
