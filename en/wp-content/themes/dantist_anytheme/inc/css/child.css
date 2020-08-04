@@ -1,0 +1,105 @@
+
+.cont{
+margin: auto;
+max-width: 1000px;
+}
+.formatText li{
+    font-weight: 100;
+    font-family: "Roboto Light";
+    font-size: 17px;
+}
+.InfoCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ececec;
+    margin: 10px 0;
+}
+.InfoCard img{
+    padding: 20px;
+    width: 300px;
+    height: 265px;
+    border: 2px solid #bebebe;
+    margin: 20px 10px;
+    
+
+}
+.borderText {
+    padding: 20px;
+    max-width: 657px;
+    max-height: fit-content;
+    border: 2px solid #bebebe;
+    margin: 20px 10px;
+}
+  .borderText p{
+font-size: 17px !important;
+
+  }
+.underline{
+    text-decoration: underline;
+    margin: 20px 0 0 20px;
+}
+.child.banner{
+    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/08/DantChild.jpg")no-repeat, center center;
+    background-size: cover;
+}
+.child .padding-vertical{
+    padding: 20px 0;
+}
+.child .list li{
+    font-family: "Roboto Light";
+    font-size: 20px;
+    margin: 10px auto;
+    line-height: 1.3;
+    padding-right: 20px !important;
+
+}
+.img-list.child > div:nth-child(1).img_1{
+    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/08/childs_2.jpg") no-repeat, center center;
+    background-size: cover;
+}
+.img-list.child > div:nth-child(1).img_2{
+    background: url("https://test.web2018.dp.ua/wp-content/uploads/2020/08/childs_kt_4.jpg") no-repeat, center center;
+    background-size: cover;
+}
+@media screen and (max-width: 900px){
+    .img-list.child > div:nth-child(1),
+    .img-list.child > div:nth-child(2){
+        height: 500px;
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 800px){
+    .img-list.child > div:nth-child(1),
+    .img-list.child > div:nth-child(2){
+        height: 500px;
+        width: 80%;
+   }
+}
+@media screen and (max-width: 710px){
+    .img-list.child > div:nth-child(1) {
+        order: 1;
+    }
+}
+@media screen and (max-width: 650px){
+    .child:not(.banner){
+        width: 90%;
+    }
+   .img-list.child > div:nth-child(1),
+    .img-list.child > div:nth-child(2){
+        width: 100%;
+    }
+}
+@media screen and (max-width: 610px){
+    .child .list li{
+        font-size: 16px;
+        margin: 10px auto;
+        line-height: 1.1;
+        padding-right: 20px !important;
+
+    }
+
+}
+

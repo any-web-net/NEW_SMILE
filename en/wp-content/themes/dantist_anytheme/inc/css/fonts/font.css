@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto.ttf');
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('Roboto Light.ttf');
+}
+@font-face {
+    font-family: 'Roboto Bold Italic';
+    src: url('Roboto Bold Italic.ttf');
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('Roboto Condensed.ttf');
+}
+@font-face {
+    font-family: 'Roboto Italic';
+    src: url('Roboto Italic.ttf');
+}
+@font-face {
+    font-family: 'Roboto Medium Italic';
+    src: url('Roboto Medium Italic.ttf');
+}
+@font-face {
+    font-family: 'MarckScript Regular';
+    src: url('MarckScript-Regular.ttf');
+}

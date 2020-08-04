@@ -24,8 +24,8 @@
             <!------------------------------------------------------>
             <div class="site-contacts row align-end">
                 <div class="languages row">
-                    <a href="#" class="lang-button current-lang">УКР</a>
-                    <a href="#" class="lang-button">ENG</a>
+                    <a href="https://test.web2018.dp.ua" class="lang-button current-lang">УКР</a>
+                    <a href="https://en.test.web2018.dp.ua" class="lang-button">ENG</a>
                 </div>
                 <div class="header-contacts row  align-end">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/phone_icon.png " alt="phone" class="photo_icon">

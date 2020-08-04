@@ -1,0 +1,205 @@
+
+/*--------------------------------- Заявка -----------------------*/
+#request form,
+#request input:not(.button),
+#request textarea{
+    width: 100%;
+}
+#request input:not(.button),
+#request textarea{
+    background: #d4d4d4;
+    color: black;
+    font-family: "Roboto Light";
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 7px auto;
+}
+#request input{
+    height: 45px;
+}
+#request input::placeholder,
+#request textarea::placeholder{
+    color: white;
+    font-family: "Roboto Light";
+    font-size: 18px;
+}
+#request textarea{
+    height: 160px;
+}
+#request input[type=submit]{
+    width: 200px;
+    height: 50px;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-family: Roboto;
+    font-size: 20px;
+    margin: 7px 0 auto auto;
+    align-self: flex-end;
+}
+.error{
+    max-width: 100%;
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+    margin: 0  auto 2px auto;
+    text-align: center;
+}
+
+.success{
+     max-width: 100%;
+    font-family: Roboto;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 3px;
+    margin: 0  auto 2px auto;
+    text-align: center;
+}
+
+.error-text {
+    background: #F59E9E;
+    padding: 15px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.error-name, .error-email, .error-comments {
+    display: inline-block;
+    font-size: 11px;
+    position: absolute;
+    top: -30px;
+    color: white;
+    border: 1px solid red;
+    padding: 5px 10px;
+    line-height: 1.1;
+    background: red;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.error-name:after, .error-email:after, .error-comments:after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    border: 5px solid transparent;
+    border-top: 5px solid red;
+}
+
+.error-comments {
+    top: 16%;
+    left: 0;
+}
+
+.error-name {
+
+    left: 0;
+}
+
+.error-email {
+    right: 4%;
+}
+
+
+@media screen and (max-width: 1030px){
+    #request input:not(.button),
+    #request textarea {
+        padding: 5px 15px;
+        margin: 5px auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    #request input,
+    #request textarea,
+    #request input[type=submit],
+    #request input::placeholder,
+    #request textarea::placeholder{
+        font-size: 18px;
+    }
+    #request input,
+    #request input[type=submit]{
+        height: 36px;
+    }
+    #request textarea{
+        height: 130px;
+    }
+}
+@media screen and (max-width: 850px) {
+
+}
+@media screen and (max-width: 710px) {
+    #request input,
+    #request textarea,
+    #request input::placeholder,
+    #request textarea::placeholder{
+        font-size: 18px;
+        margin: 7px auto;
+    }
+    #request input{
+        height: 45px;
+        padding: 15px;
+    }
+    #request textarea{
+        height: 160px;
+        padding: 15px;
+    }
+    #request input[type=submit]{
+        width: 200px;
+        height: 50px;
+        margin: 7px 0 auto auto;
+    }
+
+}
+@media screen and (max-width: 660px) {
+
+}
+@media screen and (max-width: 600px) {
+
+}
+@media screen and (max-width: 500px) {
+
+}
+@media screen and (max-width: 420px) {
+    #request input,
+    #request textarea,
+    #request input[type=submit],
+    #request input::placeholder,
+    #request textarea::placeholder{
+        font-size: 16px;
+        padding: 5px;
+    }
+    #request input,
+    #request input[type=submit]{
+        height: 40px;
+    }
+    #request textarea{
+        height: 130px;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    #request input,
+    #request textarea,
+    #request input[type=submit],
+    #request input::placeholder,
+    #request textarea::placeholder{
+        font-size: 14px;
+    }
+    #request input,
+    #request input[type=submit]{
+        height: 40px;
+        width: 100%;
+    }
+    #request textarea{
+        height: 110px;
+    }
+}
+
+
