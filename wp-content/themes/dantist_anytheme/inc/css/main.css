@@ -673,6 +673,9 @@ img.photo_icon{
 }
 
 /*====================Top-Menu===================================*/
+.menu-main-menu-container{
+    width: 100% !important;
+}
 
 .menu-mobile-navigation-container,
 .top-menu{

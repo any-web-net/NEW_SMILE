@@ -2,9 +2,9 @@
     <div class="container row justify-between align-end top-info">
 
         <div class="address">
-            <p class="left">м.Червоноград</p>
-            <p class="left">вул. Героїв майдану 9</p>
-       </div>
+            <p class="left">Heroes of Maidan Street, building 9</p>
+            <p class="left">Chervonohrad city, Ukraine </p>
+        </div>
         <!--------------------------------------------->
          <div class="social row align-end">
             <div class="social_icons row justify-between">
@@ -29,7 +29,7 @@
     </div>
 
     <div class="container row justify-center copyright">
-        <?php echo date('Y') ?>© Стоматологічна клініка <span class="font-MarckScript">&nbsp; New Smile</span>, 2020</div>
+        <?php echo date('Y') ?>© Dental clinic <span class="font-MarckScript">&nbsp; New Smile</span>, 2020</div>
 </footer>
   <?php wp_footer(); ?>
 </body>

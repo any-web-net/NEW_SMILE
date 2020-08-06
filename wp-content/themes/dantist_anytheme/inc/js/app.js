@@ -26,6 +26,7 @@ function position_icon(){
 }
 position_icon();
 //=============================
+let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 // слушаем событие resize
 window.addEventListener('resize', () => {
