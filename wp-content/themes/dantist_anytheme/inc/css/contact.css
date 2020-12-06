@@ -1,3 +1,10 @@
-.form-block{
+.vl_main .vl_border{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border: 2px solid transparent;
+    background: linear-gradient(to bottom right, #d4d4d4 5%, white 30%, white 70%, #d4d4d4 95%) no-repeat;
+}
+.vl_main .form-block{
 	background: url("https://test.web2018.dp.ua/wp-content/themes/dantist_anytheme/img/flowers.png") no-repeat, center center;
 }
